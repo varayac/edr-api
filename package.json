@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "format": "standard --fix ."
   },
   "keywords": [],
   "author": "varayac",
@@ -13,13 +13,14 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.3",
-    "mysql2": "^2.3.3",
+    "mariadb": "^3.0.0",
+    "nodemon": "^2.0.15",
     "sequelize": "^6.18.0"
-  },
-  "eslintConfig": {
-    "extends": "./node_modules/satandard/slintrc.json"
   },
   "devDependencies": {
     "standard": "16.0.4"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/standard/slintrc.json"
   }
 }
