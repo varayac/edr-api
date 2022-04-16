@@ -1,5 +1,5 @@
 // Import models
-import ClientModel from '../models/ClientModel.js'
+import { ClientModel } from '../models/DataBaseModel.js'
 
 /** CRUD Methods **/
 // Read all records
@@ -16,7 +16,7 @@ export const getAllClients = async (req, res) => {
 export const getClient = async (req, res) => {
   try {
     const client = await ClientModel.findAll({
-      where: { id_client: req.params.id }
+      where: { id: req.params.id }
     })
     res.json(client[0])
   } catch (e) {
@@ -38,7 +38,7 @@ export const createClient = async (req, res) => {
 export const updateClient = async (req, res) => {
   try {
     await ClientModel.update(req.body, {
-      where: { id_client: req.params.id }
+      where: { id: req.params.id }
     })
     res.json({ message: '¡Successfully updated record!' })
   } catch (e) {
@@ -50,7 +50,7 @@ export const updateClient = async (req, res) => {
 export const deleteClient = async (req, res) => {
   try {
     await ClientModel.destroy({
-      where: { id_client: req.params.id }
+      where: { id: req.params.id }
     })
     res.json({ message: '¡Successfully Deleted record!' })
   } catch (e) {

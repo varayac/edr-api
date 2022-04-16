@@ -6,6 +6,7 @@ import {
   getClient,
   updateClient
 } from '../controllers/ClientController.js'
+
 const router = Express.Router()
 
 // get client records
