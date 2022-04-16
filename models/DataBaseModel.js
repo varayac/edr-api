@@ -42,7 +42,7 @@ export const InvoiceModel = db.define('invoices', {
   total: { type: DataTypes.NUMBER },
   id_client: { type: DataTypes.INTEGER },
   id_provider: { type: DataTypes.INTEGER }
-})
+}, { timestamps: false })
 
 // Model Table Purchases
 export const PurchaseModel = db.define('purchases', {
@@ -52,7 +52,7 @@ export const PurchaseModel = db.define('purchases', {
   id_product: { type: DataTypes.INTEGER },
   subtotal: { type: DataTypes.DOUBLE },
   createdAt: { type: DataTypes.DATE }
-})
+}, { timestamps: false })
 
 // Model Table Sales
 export const SaleModel = db.define('sales', {
@@ -62,7 +62,7 @@ export const SaleModel = db.define('sales', {
   id_product: { type: DataTypes.INTEGER },
   subtotal: { type: DataTypes.DOUBLE },
   createdAt: { type: DataTypes.DATE }
-})
+}, { timestamps: false })
 
 /* REFERENCES */
 

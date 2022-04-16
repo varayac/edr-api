@@ -4,7 +4,7 @@ import {
   deleteProduct,
   getAllProducts,
   getProduct,
-  updateProduct,
+  updateProduct
 } from '../controllers/ProductController.js'
 const router = Express.Router()
 
