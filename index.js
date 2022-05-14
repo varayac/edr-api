@@ -1,6 +1,6 @@
 import app from './app.js'
 import db from './database/db.js'
-const PORT = 9000
+const PORT = 8000
 
 async () => {
   try {
