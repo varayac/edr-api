@@ -1,6 +1,6 @@
 import app from './app.js'
 import db from './database/db.js'
-const PORT = 8000
+const PORT = 9000
 
 async () => {
   try {
@@ -16,5 +16,5 @@ app.get('/', (req, res) => {
 })
 
 app.listen(PORT, () => {
-  console.log('Server UP running in http://localhost:8000/')
+  console.log(`Server UP running in http://localhost:${PORT}/`)
 })
